@@ -1,4 +1,4 @@
-void ft_print_numbers(int n);
+void ft_print_combn(int n);
 void ft_putchar(char c);
 
 int main(void)

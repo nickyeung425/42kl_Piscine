@@ -1,0 +1,5 @@
+Credentials cache: API:A901E544-1738-40EF-8039-3082542B0D97
+        Principal: wyeung@42KL.EDU.MY
+
+  Issued                Expires               Principal
+Jul 31 15:01:31 2021  Aug  1 01:01:28 2021  krbtgt/42KL.EDU.MY@42KL.EDU.MY

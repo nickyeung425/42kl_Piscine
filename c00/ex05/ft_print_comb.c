@@ -10,7 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 void	ft_putchar(char c);
+
+void	ft_print_comma(void)
+{
+	ft_putchar(',');
+	ft_putchar(' ');
+}
 
 void 	ft_print_nbr(char x, char y, char z)
 {
@@ -21,12 +29,6 @@ void 	ft_print_nbr(char x, char y, char z)
 	{
 		ft_print_comma();
 	}
-}
-
-void	ft_print_comma(void)
-{
-	ft_putchar(',');
-	ft_putchar(' ');
 }
 
 void	ft_print_comb(void)
@@ -51,7 +53,9 @@ void	ft_print_comb(void)
 				z++;
 			}
 			y++;
+			z = 0;
 		}
 		x++;
+		y = 0;
 	}
 }

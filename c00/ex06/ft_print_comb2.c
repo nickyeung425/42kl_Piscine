@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 02:37:18 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/01 03:11:28 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/02 20:48:45 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ void	ft_print(int i, int j, int x, int y)
 	}
 }
 
-void loop_start(int i, int j, int x, int y)
+void	loop_start(int i, int j, int x, int y)
 {
 	while (i <= 9)
 	{
 		while (j <= 9)
 		{
-			while(x <= 9)
+			while (x <= 9)
 			{
 				while (y <= 9)
 				{

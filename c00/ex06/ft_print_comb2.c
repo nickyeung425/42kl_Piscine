@@ -14,10 +14,11 @@ void	ft_putchar(char c);
 
 void	ft_print(int i, int j, int x, int y)
 {
-	if ((j < y) && (i == x || i < x))
+	if ((j < y) && (i <= x))
 	{
 		ft_putchar(i + '0');
 		ft_putchar(j + '0');
+		ft_putchar(' ');
 		ft_putchar(x + '0');
 		ft_putchar(y + '0');
 		if (!(i == 9 && j == 8 && x == 9 && y == 9))
@@ -25,6 +26,30 @@ void	ft_print(int i, int j, int x, int y)
 			ft_putchar(',');
 			ft_putchar(' ');
 		}
+	}
+}
+
+void loop_start(int i, int j, int x, int y)
+{
+	while (i <= 9)
+	{
+		while (j <= 9)
+		{
+			while(x <= 9)
+			{
+				while (y <= 9)
+				{
+					ft_print(i, j, x, y);
+					y++;
+				}
+				y = 0;
+				x++;
+			}
+			x = 0;
+			j++;
+		}
+		j = 0;
+		i++;
 	}
 }
 

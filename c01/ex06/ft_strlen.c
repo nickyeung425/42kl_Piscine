@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wyeung <wyeung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/02 21:32:36 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/02 21:39:25 by wyeung           ###   ########.fr       */
+/*   Created: 2021/08/02 21:43:59 by wyeung            #+#    #+#             */
+/*   Updated: 2021/08/02 21:45:50 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
-{
-	int *div;
-	int *mod;
+#include <stdio.h>
 
-	*div = *a / *b;
-	*mod = *a % *b;
-	*a = *div;
-	*b = *mod;
+int	ft_strlen(char * str)
+{
+	int count;
+	
+	count = 0;
+	if (str)
+	{
+		while(*str != '\0')
+		{
+			count++;
+			++str;
+		}
+	}
+
+	return count;
 }

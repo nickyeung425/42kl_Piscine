@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wyeung <wyeung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/02 21:41:10 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/02 21:43:24 by wyeung           ###   ########.fr       */
+/*   Created: 2021/08/02 21:30:42 by wyeung            #+#    #+#             */
+/*   Updated: 2021/08/02 21:32:08 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int count;
-
-	count = 1;
-	while(str[count] != '\0')
+	if (b != 0)
 	{
-		write(1, str[count], 1);
+		*div = a / b;
+		*mod = a % b;
 	}
 }

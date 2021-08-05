@@ -19,7 +19,12 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	if (nb >= 0 && nb <= 9)
+	if (nb == -2147483648)
+	{
+		ft_putnbr((nb/10));
+		ft_putnbr(8);
+	}
+	else if (nb >= 0 && nb <= 9)
 	{
 		ft_putchar(nb + '0');
 	}

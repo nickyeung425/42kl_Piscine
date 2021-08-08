@@ -10,5 +10,41 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
+void ft_swap(int *a, int *b)
+{
+	int c;
+
+	c = *a;
+	*a = *b;
+	*b = c;
+}
+
+
 void ft_sort_int_tab(int *tab, int size)
 {
+  int current_lowest;
+  int lowest_index;
+  int index;
+  int inner_index;
+
+  index=0;
+
+  while (index < size)
+  {
+    current_lowest = tab[index];
+    lowest_index = index;
+    inner_index = index;
+    while (inner_index < size)
+    {
+      if (current_lowest > tab[inner_index])
+      {
+        current_lowest = tab[inner_index];
+        lowest_index = inner_index;
+      }
+      ft_swap(&tab[index], &tab[lowest_index]);
+      inner_index++;
+    }
+    index++;
+  }
+}

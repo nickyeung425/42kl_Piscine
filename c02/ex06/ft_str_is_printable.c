@@ -8,7 +8,7 @@ int ft_str_is_printable(char *str)
   result = 1;
   while (*str)
   {
-    if (*str <= ' ')
+    if (*str <= ' ' || *str > 126)
     {
       result = 0;
       break;

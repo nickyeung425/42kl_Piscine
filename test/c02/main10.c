@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main10.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/11 01:25:15 by wyeung            #+#    #+#             */
+/*   Updated: 2021/08/11 01:25:16 by wyeung           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
-int				main(void)
+int	main(void)
 {
 	char	*string1;
 	char	string2[5];

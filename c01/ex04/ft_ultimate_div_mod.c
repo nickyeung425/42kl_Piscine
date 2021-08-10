@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wyeung <wyeung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 21:32:36 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/02 21:39:25 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/11 00:45:56 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int div;
-	int mod;
+	int	div;
+	int	mod;
 
 	if (*b != 0)
 	{

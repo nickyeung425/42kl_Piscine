@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main00.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/11 01:14:52 by wyeung            #+#    #+#             */
+/*   Updated: 2021/08/11 01:15:24 by wyeung           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
-void ft_ft(int *nbr);
+void	ft_ft(int *nbr);
 
-int main(void)
+int	main(void)
 {
-  int a;
+	int	a;
 
-  a = 1;
-  printf("Before: a is %d\n", a);
-  ft_ft(&a);
-  printf("After: a is %d\n", a);
+	a = 1;
+	printf("Before: a is %d\n", a);
+	ft_ft(&a);
+	printf("After: a is %d\n", a);
 }

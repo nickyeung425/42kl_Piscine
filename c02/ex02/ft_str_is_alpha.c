@@ -1,17 +1,28 @@
-int ft_str_is_alpha(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/11 00:53:26 by wyeung            #+#    #+#             */
+/*   Updated: 2021/08/11 00:54:29 by wyeung           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_str_is_alpha(char *str)
 {
-  int result;
+	int	result;
 
-  result = 1;
-  while (*str)
-  {
-    if (!(('a' <= *str && *str <= 'z') || ('A' <= *str && *str <= 'Z')))
-    {
-      result = 0;
-      break;
-    }
-    str++;
-  }
-
-  return (result);
+	result = 1;
+	while (*str)
+	{
+		if (!(('a' <= *str && *str <= 'z') || ('A' <= *str && *str <= 'Z')))
+		{
+			result = 0;
+			break ;
+		}
+		str++;
+	}
+	return (result);
 }

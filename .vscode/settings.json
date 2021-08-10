@@ -1,0 +1,19 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "42norminette.command": "norminette -R CheckForbiddenSourceHeader", // Default: 'norminette'.
+    "42norminette.showErrors": "all", // Default: 'all'. ['all', 'one']
+    "42norminette.trace.server": "messages", // Default: 'messages'. ['messages', 'off', 'verbose']
+    "42header.username": "wyeung",
+    "42header.email": "wyeung@student.42kl.edu.my",
+    "files.associations": {
+        "*.html": "twig",
+        "*.module": "php",
+        "unistd.h": "c",
+        "chrono": "c",
+        "sstream": "c"
+    }
+}

@@ -1,8 +1,8 @@
 #include <stdlib.h>
 
-int check_value_onboard(int *values, int values_size, int value)
+int	check_value_onboard(int *values, int values_size, int value)
 {
-	int index;
+	int	index;
 
 	index = 0;
 	while (index < values_size)

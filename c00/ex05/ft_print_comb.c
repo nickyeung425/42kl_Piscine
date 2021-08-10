@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wyeung <wyeung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 01:58:25 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/01 02:54:49 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/11 00:44:33 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_print_comma(void)
 	ft_putchar(' ');
 }
 
-void 	ft_print_nbr(char x, char y, char z)
+void	ft_print_nbr(char x, char y, char z)
 {
 	ft_putchar(x + '0');
 	ft_putchar(y + '0');

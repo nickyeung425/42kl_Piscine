@@ -12,15 +12,14 @@
 
 #include <unistd.h>
 
-
 void	ft_putstr(char *str)
 {
+	char	current_char;
+
 	if (str)
 	{
-		while(*str != '\0')
+		while (*str != '\0')
 		{
-			char current_char;
-			
 			current_char = *str;
 			write(1, &current_char, 1);
 			++str;

@@ -1,39 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/10 19:19:59 by nick              #+#    #+#             */
-/*   Updated: 2021/08/11 18:16:35 by wyeung           ###   ########.fr       */
+/*   Created: 2021/08/11 15:23:52 by wyeung            #+#    #+#             */
+/*   Updated: 2021/08/11 15:26:38 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-unsigned int	ft_str_len(char *str)
+void	ft_putchar(char c)
 {
-	unsigned int	index;
-
-	index = 0;
-	while (str[index])
-	{
-		index++;
-	}
-	return (index);
+	write(1, &c, 1);
 }
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+void	ft_putnbr(int nb)
 {
-	unsigned int	result_len;
-	unsigned int	index;
-
-	index = 0;
-	if (size >= ft_str_len(src))
-		result_len = ft_str_len(dest) + ft_str_len(src);
-
+	if (nb == -2147483648)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(8);
+	}
+	else if (nb >= 0 && nb <= 9)
+	{
+		ft_putchar(nb + '0');
+	}
+	else if (nb < 0)
+	{
+		ft_putchar('-');
+		ft_putnbr(nb * -1);
+	}
 	else
-		result_len = (ft_str_len(dest)) + size + 1;
-	return (result_len);
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
 }

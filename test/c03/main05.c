@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:23:10 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:30:10 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/11 17:57:32 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	main(void)
 	int		index;
 	int		size;
 
-	size = 1;
+	size = 6;
 	str_base = "Hello";
 	src = " World";
 	index = 0;

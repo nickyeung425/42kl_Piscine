@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:22:49 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:22:50 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 17:15:17 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@ int	ft_strcmp(char *s1, char *s2);
 
 int	main(void)
 {
-	char	*str1;
-	char	*str2;
+	char	*str1 = "abcDe";
+	char	*str2 = "abcDz";
 	int		result;
 
-	*str1 = "abcDe";
-	*str2 = "abcDz";
 	printf("strcmp(str1, str2) = %d\n", strcmp(str1, str2));
 	printf("ft : %d\n", ft_strcmp(str1, str2));
 }

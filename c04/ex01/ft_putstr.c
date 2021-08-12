@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 15:24:20 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 15:24:20 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/11 23:51:29 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void	ft_putstr(char *str)
 	while (*str)
 	{
 		ft_print_char(*str);
+		str++;
 	}
 }

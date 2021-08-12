@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 00:58:00 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:02:20 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 17:12:25 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 int	is_char_printable(char c)
 {
-	if (c > ' ' && c <= 126)
+	if (c >= ' ' && c <= 126)
 	{
 		return (1);
 	}

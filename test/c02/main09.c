@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:25:20 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:25:51 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 17:07:31 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int	main(void)
 	char	str_cap[60];
 	int		index;
 
-	str_base = "salut, c0mment tu vas ? 42mots quarante-deux; cinquante+et+un";
-	// str_base = "Vk_(7X)Vmf#H'Fk?>8j@} /7VVxh3(X{6)Xb";
+	// str_base = "salut, c0mment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	str_base = "Vk_(7X)Vmf#H'Fk?>8j@} /7VVxh3(X{6)Xb";
 	index = 0;
 	while (index < 61)
 	{

@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:29:25 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/12 02:40:23 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 16:14:25 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,15 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 
 int	main(void)
 {
-	char	*src = "Testing string";
-	char	dest[12];
+	char	*src;
+	char	dest[20];
+	int		size;
 
-	memset(dest, '\0', sizeof(dest));
-	strcpy(src, "This is tutorialspoint.com");
-	printf("result from function: %s", strncpy(dest, src, 10));
-	printf("Final copied string : %s\n", dest);
-	return (0);
+	src = "Hello World";
+	size = 8;
+	printf("base   : %s\n", src);
+	strncpy(dest, src, size);
+	printf("cpy    : %s\n", dest);
+	ft_strncpy(dest, src, size);
+	printf("ft_cpy : %s\n", dest);
 }

@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:25:15 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:25:16 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 17:10:55 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,13 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 int	main(void)
 {
 	char	*string1;
-	char	string2[5];
+	int		size = 14;
+	char	string2[size];
 
 	string1 = "16zKlNCROAXIVG";
 	printf("base   : %s\n", string1);
-	strlcpy(string2, string1, 5);
+	strlcpy(string2, string1, size);
 	printf("cpy c  : %s\n", string2);
-	ft_strlcpy(string2, string1, 5);
+	ft_strlcpy(string2, string1, size);
 	printf("cpy ft : %s\n", string2);
 }

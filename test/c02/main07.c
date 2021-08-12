@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:26:44 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:27:07 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 16:22:10 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,18 @@ char	*ft_strupcase(char *str);
 
 int	main(void)
 {
-	char	test[10];
+	char	*str_base;
+	char	str_upper[6];
+	int		index;
 
-	test[0] = 'H';
-	test[1] = 'e';
-	test[2] = 'L';
-	test[3] = 'l';
-	test[4] = 'o';
-	test[5] = '1';
-	test[6] = '2';
-	test[7] = '#';
-	test[8] = '$';
-	test[9] = 'N';
-	printf("%s\n", test);
-	printf("%s\n", ft_strlowcase(test));
-	return (0);
+	str_base = "heLl0";
+	index = 0;
+	while (index < 6)
+	{
+		str_upper[index] = str_base[index] + 0;
+		index++;
+	}
+	ft_strupcase(&str_upper[0]);
+	printf("Normal    : %s\n", str_base);
+	printf("Upper case: %s\n", str_upper);
 }

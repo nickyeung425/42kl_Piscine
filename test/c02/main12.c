@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 01:24:10 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 01:25:00 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/12 17:13:51 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,8 @@ int	ft_strcmp(char *s1, char *s2)
 
 int	main(void)
 {
-	char	*str1;
-	char	*str2;
+	char	*string;
 
-	str1 = "Hello";
-	str2 = "Hellooasd";
-	printf("c  : %d\n", strcmp(str1, str2));
-	printf("ft : %d\n", ft_strcmp(str1, str2));
+	string = "Bonjour les aminches\t\n\tc  est fou.tout.ce qu on peut faire avec...print_memory....lol.lol. ";
+	ft_print_memory(string, 1500);
 }

@@ -20,6 +20,8 @@
         "functional": "c",
         "iterator": "c",
         "memory": "c",
-        "random": "c"
+        "random": "c",
+        "stdio.h": "c",
+        "string.h": "c"
     }
 }

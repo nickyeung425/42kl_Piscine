@@ -6,11 +6,10 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 00:57:53 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/12 16:37:56 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/15 17:38:14 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 
 int	check_condition(char c)
 {

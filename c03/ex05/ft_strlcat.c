@@ -6,11 +6,9 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 19:19:59 by nick              #+#    #+#             */
-/*   Updated: 2021/08/11 20:01:14 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/15 17:38:39 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 unsigned int	ft_str_len(char *str)
 {

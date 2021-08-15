@@ -22,6 +22,8 @@
         "memory": "c",
         "random": "c",
         "stdio.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "__locale": "c",
+        "limits": "c"
     }
 }

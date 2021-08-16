@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 19:25:48 by nick              #+#    #+#             */
-/*   Updated: 2021/08/11 15:52:02 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/16 01:06:48 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char	*ft_strstr(char *str, char *to_find)
 		return (str);
 	while (str[index])
 	{
+		to_find_index = 0;
 		while (to_find[to_find_index] == str[index + to_find_index])
 		{
 			if (to_find_index == to_find_size - 1)

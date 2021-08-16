@@ -6,20 +6,24 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 00:53:09 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/11 00:53:12 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/17 01:22:09 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	index;
+	unsigned int	index;
 
 	index = 0;
-	while (index < n)
+	while (index < n && src[index] != '\0')
 	{
 		dest[index] = src[index];
 		index++;
 	}
-	dest[index] = '\0';
+	while (index < n)
+	{
+		dest[index] = '\0';
+		index++;
+	}
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 00:57:53 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/15 17:38:14 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/17 01:32:34 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strcapitalize(char *str)
 	int	caps;
 
 	index = 1;
-	caps = 0;
+	caps = 1;
 	while (str[index] != '\0')
 	{
 		if (check_condition(str[index]) == 1)

@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:28:05 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/15 18:28:05 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/15 23:50:43 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	print_str(char *str)
 	}
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	if (argc > 0)
 	{

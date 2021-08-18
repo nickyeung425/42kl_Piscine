@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 19:19:59 by nick              #+#    #+#             */
-/*   Updated: 2021/08/18 20:18:46 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/18 20:19:29 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ unsigned int	ft_str_len(char *str)
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int	result_len;
 	unsigned int	index_dest;
 	unsigned int	index_src;
 

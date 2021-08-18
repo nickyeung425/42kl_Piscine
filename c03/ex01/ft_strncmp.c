@@ -12,7 +12,7 @@
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	index;
+	unsigned int	index;
 
 	index = 0;
 	while (index < n)

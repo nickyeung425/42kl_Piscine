@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 19:50:41 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/15 20:10:08 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/18 19:36:04 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,11 @@
 int	str_len(char *str)
 {
 	int	index;
-	while(str[index])
-	{
+
+	while (str[index])
 		index++;
-	}
 	index = index + 1;
-	return index;
+	return (index);
 }
 
 char	*ft_strdup(char *src)
@@ -32,7 +31,7 @@ char	*ft_strdup(char *src)
 	dest = (char *)malloc(sizeof(char) * str_len(src));
 	if (dest == NULL)
 		return (NULL);
-	while(src[index])
+	while (src[index])
 	{
 		dest[index] = src[index];
 		index++;

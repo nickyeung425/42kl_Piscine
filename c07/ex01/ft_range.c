@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 20:38:22 by wyeung            #+#    #+#             */
-/*   Updated: 2021/08/15 22:43:34 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/18 19:38:37 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*ft_range(int min, int max)
 	int	index;
 
 	if (min >= max)
-		return NULL;
+		return (0);
 	index = 0;
 	no_arr = (int *)malloc(sizeof(int) * (max - min + 1));
 	while (min < max)

@@ -6,7 +6,7 @@
 /*   By: wyeung <wyeung@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 19:19:59 by nick              #+#    #+#             */
-/*   Updated: 2021/08/15 17:38:39 by wyeung           ###   ########.fr       */
+/*   Updated: 2021/08/18 20:18:46 by wyeung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,25 +22,24 @@ unsigned int	ft_str_len(char *str)
 	return (index);
 }
 
-void	ft_str_append(char *dest, char *src, unsigned int size)
-{
-	char	*result[size];
-}
-
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int	result_len;
-	unsigned int	index;
+	unsigned int	index_dest;
+	unsigned int	index_src;
 
-	index = 0;
-	if (size >= ft_str_len(src))
+	if (size < 1)
+		return (size + ft_str_len(src));
+	index_dest = ft_str_len(dest);
+	index_src = 0;
+	while (src[index_src] && index_dest < size - 1)
 	{
-		result_len = ft_str_len(dest) + ft_str_len(src);
-		ft_str_append(dest, src, size);
+		dest[index_dest] = src[index_src];
+		index_dest++;
+		index_src++;
 	}
-	else
-	{
-		result_len = (ft_str_len(dest)) + size + 1;
-	}
-	return (result_len);
+	dest[index_dest] = '\0';
+	if (size < ft_str_len(dest))
+		return (size + ft_str_len(src));
+	return (ft_str_len(dest) + ft_str_len(src));
 }

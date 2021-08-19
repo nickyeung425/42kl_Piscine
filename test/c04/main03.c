@@ -6,6 +6,6 @@ int	main(void)
 {
 	char	*str;
 
-	str = " ---+--+1234ab567";
+	str = " ---+-+21474836478";
 	printf("%d\n", ft_atoi(str));
 }
